@@ -47,7 +47,7 @@ int product(int x, int y);
  * @return The quotient of two integers numbers.
  * @exception DivisioByZeroException On division by zero.
  */
-double quotient(int x, int y);
+int quotient(int x, int y);
 
 void inputOperation();
 
@@ -122,7 +122,7 @@ int product(int x, int y) {
     return x * y;
 }
 
-double quotient(int x, int y) {
+int quotient(int x, int y) {
     if (y == 0) throw exception();
-    return static_cast<double>(x) / y;
+    return x / y;
 }
