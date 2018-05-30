@@ -123,6 +123,5 @@ int product(int x, int y) {
 }
 
 int quotient(int x, int y) {
-    if (y == 0) throw exception();
-    return x / y;
+    if (y != 0) return x / y;
 }
